@@ -8,6 +8,9 @@ IntelliJ<br>
 <h2>Lancer le Jar</h2
   <h2>1.Pour génerer des données</h2>
   Utile pour génerer un grand volume de données afin de tester la performance de l'application avec un grand volume de données.
+  ```bash
+pip install foobar
+```
  <br> <b>scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] </b>  <b>[transLinesNumber] [reflinesNumber] </b><br>
   <b>ou </b><br>
   <b> outPutPath : </b>Path ou les fichiers générer vont se trouver.</b><br>
