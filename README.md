@@ -1,10 +1,4 @@
-Challenge Phenixsds
-
-
-
-
-
-<B>Ceci est un paragraphe de texte.</B>
+<h1>Ceci est un paragraphe de texte.</h1>
 
 <p>Ceci est un autre paragraphe de texte !</p>
 
