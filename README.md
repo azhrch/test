@@ -6,7 +6,8 @@ sbt 1.2.8<br>
 IntelliJ<br>
 
 <h2>Librairie</h2>
-"akka-stream", version compatible avec scala 2.12.0. Utilisé pours gérer la lecture des fichiers énormes.<br>
+"akka-stream" version compatible avec scala 2.12.0 : Utilisé pours gérer la lecture des fichiers énormes.<br>
+"scalatest" : utilisé pour les tests unitaires.<br>
 
 <h2>Pour compiler le code</h2>
 sbt compile.
