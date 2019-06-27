@@ -12,7 +12,7 @@ import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
 
 
-class Tests extends FunSuite  {
+class FilesUtils extends FunSuite  {
 
 
 

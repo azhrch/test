@@ -3,7 +3,7 @@ package ProcessingData
 import ProcessingData.FilesUtils._
 import akka.actor.ActorSystem
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
-import scala.concurrent.{Await, ExecutionContext}
+import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
 
 object ProcessingService {

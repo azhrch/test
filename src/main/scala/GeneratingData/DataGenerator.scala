@@ -10,7 +10,7 @@ object DataGenerator {
 
   def main(args: scala.Array[String]): Unit = {
 
-    val path = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/" //args(0)
+    val path = ".src/resources/output/" //args(0)
     val date = "20160512" //args(1)
     val numberOfDays =  3 //args(2).toInt
     val transLinesNumber = 1000 //args(3).toInt
