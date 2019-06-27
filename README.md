@@ -18,7 +18,7 @@ IntelliJ<br>
   <b>transLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
   <b>reflinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
-  <h2>1.Pour traiter les données et calculer les indicateur</h2>
+  <h2>1.Pour traiter les données et calculer les indicateurs</h2>
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
 <b>ou </b><br>
   <b> date : </b>date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
@@ -40,12 +40,3 @@ top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ca_GLOBAL_YYYYMMDD-J7.data<br>
 
-
-
-
-Simulation des contraintes
-
-il faux indiquer un pourcentage des thread disponibles.
-cpulimit -l 25 sbt run &
-
-scala -J-Xmx512Mo
