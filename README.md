@@ -24,14 +24,14 @@ IntelliJ<br>
   <b> inPutPath : </b>Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
   <b> outPutPath : </b>Path ou les résultats des calculs seront exportés</b><br>
   
-DataProcessor génère les fichiers si numberOfDays passé est 1<br><br>
+Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants 1<br><br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ca_GLOBAL_YYYYMMDD.data<br>
 <br>
-et les fichiers si numberOfDays passé est 7.<br>
+Si numberOfDays passé est 7 DataProcessor génère les fichiers suivants 1<br><br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
