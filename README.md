@@ -5,6 +5,15 @@ Scala 2.12.0<br>
 sbt 1.2.8<br>
 IntelliJ<br>
 
+<h2>Librairie</h2>
+"akka-stream", version compatible avec scala 2.12.0. Utilisé pours gérer la lecture des fichiers énormes.<br>
+
+<h2>Pour compiler le code</h2>
+sbt compile.
+<h2>Pour packager le code</h2>
+sbt assembly.<br>
+résultat un fat jar avec la dépendance "akka-stream" incluse dans le jar.<br>
+
 <h2>Lancer le Jar</h2>
   <h2>1. Pour génerer des données</h2>
   Utile pour génerer un grand volume de données afin de tester la performance de l'application avec un grand volume de données.
