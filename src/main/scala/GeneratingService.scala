@@ -8,30 +8,31 @@ object GeneratingService {
   def main(args: scala.Array[String]): Unit = {
 
     println(randomAlphaNumeric(10))
-    generateTransactionsFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/ss.txt")
-  }
+    generateTransactionsFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/azeze.txt")
 
-/* // generate random string of a specified length
-  def generateRandomString(length: Int): String = {
-    val leftLimit = 97
-    val rightLimit = 122
-    val random = new Random
-    val buffer = new StringBuilder(length)
+    import java.time.LocalDate
+    import java.time.format.DateTimeFormatter
+    val path = args(0)
+
+    val dateS = args(1)
+
+    val nbOfDay = args(2).toInt
+
+    val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
+    val runDay = LocalDate.parse(dateS, formatter)
     var i = 0
     while ( {
-      i < length
+      i < nbOfDay
     }) {
-      val randomLimitedInt = leftLimit + (random.nextFloat * (rightLimit - leftLimit + 1)).toInt
-      buffer.append(randomLimitedInt.toChar)
+      val date = runDay.minusDays(i).toString.replace("-", "")
+      generateTransactionsFile(path + "/transactions_" + date + ".data")
+      generateRefFile(path + "/reference_prod-" + generateRandomIdMagasin + "_" + date + ".data")
 
       {
         i += 1; i - 1
       }
     }
-    val generatedString = buffer.toString
-    generatedString
-  }*/
-
+  }
 
   private val ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvxyzw0123456789"
 
@@ -45,8 +46,6 @@ object GeneratingService {
         i += 1;
         i - 1
       }
-
-
       {
         val character = (Math.random * ALPHA_NUMERIC_STRING.length).toInt
         builder.append(ALPHA_NUMERIC_STRING.charAt(character))
@@ -58,7 +57,7 @@ object GeneratingService {
 
   //generate random Id magasin.
   def generateRandomIdMagasin: String = {
-    generateRandomString(8) + "-" + randomAlphaNumeric(5) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(12)
+    randomAlphaNumeric(8) + "-" + randomAlphaNumeric(5) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(12)
   }
 
   //generate a random date
@@ -69,7 +68,7 @@ object GeneratingService {
   }
 
 
-
+ //generate transaction files
   @throws[FileNotFoundException]
   def generateTransactionsFile(path: String): Unit = {
     val writer = new PrintWriter(new File(path))
@@ -94,7 +93,7 @@ object GeneratingService {
 
 
   @throws[FileNotFoundException]
-  def writeRefFile(path: String): Unit = {
+  def generateRefFile(path: String): Unit = {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while ( {
