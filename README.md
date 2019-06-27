@@ -12,19 +12,19 @@ IntelliJ<br>
 
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] </b>  <b>[transLinesNumber] [refLinesNumber] </b><br>
   <br>
-  <b> outPutPath : </b>Path ou les fichiers générer vont se trouver.</b><br>
-  <b> date : </b>date à laquelle on veux génerer des données. Au Format YYYYMMDD<br>
-  <b>numberOfDays :</b> nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
-  <b>transLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
-  <b>refLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
+  <b>-</b> outPutPath : Path ou les fichiers générer vont se trouver.</b><br>
+  <b>-</b> date :date à laquelle on veux génerer des données. Au Format YYYYMMDD<br>
+  <b>-</b> numberOfDays : nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
+  <b>-</b> transLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
+  <b>-</b> refLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
   <h2>1. Pour traiter les données et calculer les indicateurs</h2>
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
 <br>
-  <b> date : </b>date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
-  <b>numberOfDays :</b> nombre de jours pour les quelles on veux traiter les données.Soit 1 ou 7<br>
-  <b> inPutPath : </b>Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
-  <b> outPutPath : </b>Path ou les résultats des calculs seront exportés</b><br><br>
+  <b>-</b> date : date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
+  <b>-</b> numberOfDays : nombre de jours pour les quelles on veux traiter les données.Soit 1 ou 7<br>
+  <b>-</b>  inPutPath : Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
+  <b>-</b>  outPutPath : Path ou les résultats des calculs seront exportés</b><br><br>
   
 Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants 1<br>
 
