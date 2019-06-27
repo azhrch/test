@@ -6,7 +6,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.{Date, Random}
 
-object GeneratingService {
+object DataGenerator {
 
 
   //a supprimer , mettre toute la classe dans un autre package.

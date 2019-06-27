@@ -1,17 +1,17 @@
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-import GeneratingData.GeneratingService.{generateRefFile, generateTransactionsFile}
+import GeneratingData.DataGenerator.{generateRefFile, generateTransactionsFile}
 import org.scalatest.FunSuite
 import ProcessingData.FilesUtils._
-import GeneratingData.GeneratingService._
+import GeneratingData.DataGenerator._
 import ProcessingData.ProcessingService.process
 
 import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
 
 
-class FilesUtilsTest extends FunSuite  {
+class Tests extends FunSuite  {
 
   //test la fonction generation des donnes
   test("test generation des données") {
