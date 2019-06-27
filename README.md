@@ -32,7 +32,7 @@ scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator <outPut
   <b>-</b> transLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
   <b>-</b> refLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
-  <h2>1. Pour traiter les données et calculer les indicateurs</h2>
+  <h2>2. Pour traiter les données et calculer les indicateurs</h2>
 
   ```
 scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor <date> <numberOfDays> <inPutPath> <outPutPath> 
