@@ -1,11 +1,10 @@
 import java.util.{Date, Random}
-import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.io.{File, FileNotFoundException, PrintWriter}
-
-
+import java.util.Random
 
 object GeneratingService {
+
   def main(args: scala.Array[String]): Unit = {
 
     println(generateRandomDate(13800))
@@ -36,12 +35,12 @@ object GeneratingService {
 
 
 
-//generate random Id magasin.
+  //generate random Id magasin.
   def generateRandomIdMagasin: String = {
     generateRandomString(8) + "-" + generateRandomString(5) + "-" + generateRandomString(4) + "-" + generateRandomString(4) + "-" + generateRandomString(12)
   }
 
-
+  //generate a random date
   def generateRandomDate(n: Int): String = {
     val simple = new SimpleDateFormat("yyyyMMdd'T'HHmmssSSSZ")
     val result = new Date(System.currentTimeMillis+n*5445)
@@ -49,9 +48,6 @@ object GeneratingService {
   }
 
 
-  import java.io.FileNotFoundException
-  import java.io.PrintWriter
-  import java.util.Random
 
   @throws[FileNotFoundException]
   def generateTransactionsFile(path: String): Unit = {
@@ -76,10 +72,6 @@ object GeneratingService {
   }
 
 
-  import java.io.FileNotFoundException
-  import java.io.PrintWriter
-  import java.util.Random
-
   @throws[FileNotFoundException]
   def writeRefFile(path: String): Unit = {
     val writer = new PrintWriter(new File(path))
@@ -87,10 +79,10 @@ object GeneratingService {
     while ( {
       i < 100000
     }) {
-      val r = new Random
-      val produit = Math.abs(r.nextInt(100))
+      val rand = new Random
+      val produit = Math.abs(rand.nextInt(100))
       //
-      val prix = "%05.2f".format(r.nextFloat * 100 ) + ""
+      val prix = "%05.2f".format(rand.nextFloat * 100 ) + ""
       writer.write(produit + "|" + prix.substring(0, 5) + "\n")
 
       {
