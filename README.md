@@ -6,7 +6,7 @@ sbt 1.2.8<br>
 IntelliJ<br>
 
 <h2>Lancer le Jar</h2>
-  <h2>1.Pour génerer des données</h2>
+  <h2>1. Pour génerer des données</h2>
   Utile pour génerer un grand volume de données afin de tester la performance de l'application avec un grand volume de données.
 
 
@@ -18,7 +18,7 @@ IntelliJ<br>
   <b>transLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
   <b>reflinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
-  <h2>1.Pour traiter les données et calculer les indicateurs</h2>
+  <h2>1. Pour traiter les données et calculer les indicateurs</h2>
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
 <br>
   <b> date : </b>date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
