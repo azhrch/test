@@ -70,12 +70,12 @@ object ProcessingService {
 
     })
 
-    top100VenteGlobale.sortBy(-_._2).take(100)
-    top100CaGlobale.sortBy(-_._2).take(100)
+    val top100VenteGlobales = top100VenteGlobale.sortBy(-_._2).take(100)
+    val top100CaGlobales = top100CaGlobale.sortBy(-_._2).take(100)
 
    // exporting top 100 vente global et top 100 ca global
-   export(top100VenteGlobale, outPath + "top_100_vente_GLOBAL_" + date + suffix + ".data")
-   export(top100CaGlobale, outPath + "top_100_ca_GLOBAL_" + date + suffix + ".data")
+   export(top100VenteGlobales, outPath + "top_100_vente_GLOBAL_" + date + suffix + ".data")
+   export(top100CaGlobales, outPath + "top_100_ca_GLOBAL_" + date + suffix + ".data")
 
   })
     //terminate akka actor.

@@ -5,6 +5,7 @@ import GeneratingData.DataGenerator.{generateRefFile, generateTransactionsFile}
 import org.scalatest.FunSuite
 import ProcessingData.FilesUtils._
 import GeneratingData.DataGenerator._
+import ProcessingData.ProcessingService
 import ProcessingData.ProcessingService.process
 
 import scala.concurrent.ExecutionContext
@@ -17,7 +18,8 @@ class Tests extends FunSuite  {
 
   //test la fonction readStream
    test("test readStream") {
-    val stream = readStream("./src/resources/input/", "20170514")
+
+     val stream = readStream("./src/resources/input/", "20170514")
 
      var result: List[scala.Array[String]] = Nil
      stream.onComplete(x => {
