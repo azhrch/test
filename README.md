@@ -49,3 +49,9 @@ top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ca_GLOBAL_YYYYMMDD-J7.data<br>
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
