@@ -6,13 +6,12 @@ import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
 import scala.concurrent.{Await, ExecutionContext}
 import ExecutionContext.Implicits.global
 
-
-
 object ProcessingService {
 
   //traitement par date
+  //répond a tous les besoin, en passant numberOfdays 1 on obtient les 4 premiers besoins 1,2,3,4git a
+  // et si on passe 7 on obtient les 4 output 4,5,6,7
   def process(date: String, inPath: String,  outPath: String, numberOfDays : Int): Unit = {
-
 
     implicit val system = ActorSystem("Sys")
     val settings = ActorMaterializerSettings(system)
