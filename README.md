@@ -20,10 +20,8 @@ résultat : un fat jar avec la dépendance "akka-stream" incluse.<br>
   Utile pour génerer un grand volume de données afin de tester la capacité de l'application à traiter une grande volumeterie.
   
   ```
-
 scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] [transLinesNumber] [refLinesNumber] 
 }
-
 ```
 
 
@@ -35,7 +33,11 @@ scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPut
   <b>-</b> refLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
   <h2>1. Pour traiter les données et calculer les indicateurs</h2>
-<br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
+
+  ```
+scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] 
+}
+```
 <br>
   <b>-</b> date : date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
   <b>-</b> numberOfDays : nombre de jours pour les quelles on veux traiter les données.Soit 1 ou 7<br>
