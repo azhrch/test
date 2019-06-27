@@ -10,13 +10,13 @@ IntelliJ<br>
   Utile pour génerer un grand volume de données afin de tester la performance de l'application avec un grand volume de données.
 
 
-<br> <b>scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] </b>  <b>[transLinesNumber] [reflinesNumber] </b><br>
+<br> <b>scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] </b>  <b>[transLinesNumber] [refLinesNumber] </b><br>
   <br>
   <b> outPutPath : </b>Path ou les fichiers générer vont se trouver.</b><br>
   <b> date : </b>date à laquelle on veux génerer des données. Au Format YYYYMMDD<br>
   <b>numberOfDays :</b> nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
   <b>transLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
-  <b>reflinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
+  <b>refLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
   <h2>1. Pour traiter les données et calculer les indicateurs</h2>
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
