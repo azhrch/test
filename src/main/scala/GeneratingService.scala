@@ -7,12 +7,11 @@ object GeneratingService {
 
   def main(args: scala.Array[String]): Unit = {
 
-    println(generateRandomDate(13800))
-    writeRefFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/a.txt")
-
+    println(randomAlphaNumeric(10))
+    generateTransactionsFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/ss.txt")
   }
 
- // generate random string of a specified length
+/* // generate random string of a specified length
   def generateRandomString(length: Int): String = {
     val leftLimit = 97
     val rightLimit = 122
@@ -31,13 +30,35 @@ object GeneratingService {
     }
     val generatedString = buffer.toString
     generatedString
-  }
+  }*/
 
+
+  private val ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvxyzw0123456789"
+
+  def randomAlphaNumeric(length: Int): String = {
+    val builder = new StringBuilder
+    var i = 0
+    while ( {
+      i < length
+    }) {
+      {
+        i += 1;
+        i - 1
+      }
+
+
+      {
+        val character = (Math.random * ALPHA_NUMERIC_STRING.length).toInt
+        builder.append(ALPHA_NUMERIC_STRING.charAt(character))
+      }
+    }
+    builder.toString
+  }
 
 
   //generate random Id magasin.
   def generateRandomIdMagasin: String = {
-    generateRandomString(8) + "-" + generateRandomString(5) + "-" + generateRandomString(4) + "-" + generateRandomString(4) + "-" + generateRandomString(12)
+    generateRandomString(8) + "-" + randomAlphaNumeric(5) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(12)
   }
 
   //generate a random date
