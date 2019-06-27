@@ -4,7 +4,7 @@
 		module="phenix-challenge$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190626185332"
+		publication="20190627131155"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
