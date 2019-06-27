@@ -18,12 +18,7 @@ résultat : un fat jar avec la dépendance "akka-stream" incluse.<br>
 <h2>Lancer le Jar</h2>
   <h2>1. Pour génerer des données</h2>
   Utile pour génerer un grand volume de données afin de tester la capacité de l'application à traiter une grande volumeterie.<br>
-```
 
-scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] [transLinesNumber] [refLinesNumber] <br>
-}
-
-```
 
   <br>
   <b>-</b> outPutPath : Path ou les fichiers générer vont se trouver.</b><br>
@@ -54,4 +49,10 @@ top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ca_GLOBAL_YYYYMMDD-J7.data<br>
 
+```
+
+scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] [transLinesNumber] [refLinesNumber] 
+}
+
+```
 
