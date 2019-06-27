@@ -11,7 +11,7 @@ IntelliJ<br>
 
 
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator [outPutPath] [date] [numberOfDays] </b>  <b>[transLinesNumber] [reflinesNumber] </b><br>
-  <b>ou </b><br>
+  <br>
   <b> outPutPath : </b>Path ou les fichiers générer vont se trouver.</b><br>
   <b> date : </b>date à laquelle on veux génerer des données. Au Format YYYYMMDD<br>
   <b>numberOfDays :</b> nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
@@ -20,7 +20,7 @@ IntelliJ<br>
 
   <h2>1.Pour traiter les données et calculer les indicateurs</h2>
 <br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
-<b>ou </b><br>
+<br>
   <b> date : </b>date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
   <b>numberOfDays :</b> nombre de jours pour les quelles on veux traiter les données.Soit 1 ou 7<br>
   <b> inPutPath : </b>Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
