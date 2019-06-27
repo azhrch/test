@@ -12,12 +12,31 @@ IntelliJ<br>
   <b>ou </b><br>
   <b> outPutPath : </b>Path ou les fichiers générer vont se trouver.</b><br>
   <b> date : </b>date à laquelle on veux génerer des données. Au Format YYYYMMDD<br>
-  <b>numberOfDays :</b> nombre de jours pour les quelles on veux génerer des données aléatoire. 
-  <b>transLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.
-  <b>reflinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.
+  <b>numberOfDays :</b> nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
+  <b>transLinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
+  <b>reflinesNumber :</b> nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
 
+  <h2>1.Pour traiter les données et calculer les indicateur</h2>
+<br> <b>scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] </b><br>
+<b>ou </b><br>
+  <b> date : </b>date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
+  <b>numberOfDays :</b> nombre de jours pour les quelles on veux traiter les données.Soit 1 ou 7<br>
+  <b> inPutPath : </b>Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
+  <b> outPutPath : </b>Path ou les résultats des calculs seront exportés</b><br>
   
+DataProcessor génère les fichiers si numberOfDays passé est 1<br><br>
 
+top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data<br>
+top_100_ventes_GLOBAL_YYYYMMDD.data<br>
+top_100_ca_<ID_MAGASIN>_YYYYMMDD.data<br>
+top_100_ca_GLOBAL_YYYYMMDD.data<br>
+<br>
+et les fichiers si numberOfDays passé est 7.<br>
+
+top_100_ventes_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
+top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
+top_100_ca_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
+top_100_ca_GLOBAL_YYYYMMDD-J7.data<br>
 
 
 
