@@ -12,7 +12,7 @@ object Main {
     val date = "20170514"
     val inPath = "./src/resources/input/"
     val outPath = "./src/resources/output/"
-    val numOfDays = 1
+    val numOfDays = 7
 
 
     process(date, inPath, outPath, numOfDays)
