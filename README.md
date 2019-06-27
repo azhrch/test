@@ -35,7 +35,7 @@ scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator <outPut
   <h2>1. Pour traiter les données et calculer les indicateurs</h2>
 
   ```
-scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor [date] [numberOfDays] [inPutPath] [outPutPath] 
+scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor <date> <numberOfDays> <inPutPath> <outPutPath> 
 }
 ```
 <br>
