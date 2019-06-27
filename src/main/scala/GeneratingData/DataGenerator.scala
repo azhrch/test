@@ -8,8 +8,6 @@ import java.util.{Date, Random}
 
 object DataGenerator {
 
-
-  //a supprimer , mettre toute la classe dans un autre package.
   def main(args: scala.Array[String]): Unit = {
 
     val path = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/" //args(0)
@@ -17,6 +15,7 @@ object DataGenerator {
     val numberOfDays =  3 //args(2).toInt
     val transLinesNumber = 1000 //args(3).toInt
     val reflinesNumber = 1000  //args(4).toInt
+
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val runningDay = LocalDate.parse(date, formatter)
 
