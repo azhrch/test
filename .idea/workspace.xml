@@ -3,45 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="882c8302-fb46-4f8b-bd34-050a0da318b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-1rpvt28t-jomk9-rv0q-a7l7-b1as9nn4193l_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-2b98z187-f8tk4-l9k8-spej-lr6s2k3ei9z9_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-3ddswdg2-dqvu3-jpos-1drv-qpimkng5v2ma_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-3m2fzfk5-zvl1y-93x3-q1ld-pnnfb5fczu8n_20160509.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-5mkpgudb-ug3tu-78ac-ar0m-ia8c8i7kxuqc_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-704xsh92-uh6w2-w0pp-do78-qubycr2udkd1_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-805wzz9u-gijql-kv3s-c4po-2vtpgvuzz576_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-8s5ektui-hmnbf-riks-anjt-nmb16acraowr_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-91st3j9j-r9o91-gbz6-p35y-0dsew0rzlkho_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-d2urbq42-bjj6k-566q-2ktf-sre2kmbg1l3b_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-dcbtummp-pm1d0-6iwn-5kup-8tbcusb71woo_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-dexc3g52-trul8-z685-bb54-7q2wlf7dv18y_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-e7k7c8n8-0jpte-z1qc-mxzi-yqc8vhb40d2u_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-es07tuas-rmybp-545f-diri-bh7vmblaf5v0_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-evgc17g4-l3gwl-2a2y-50h5-5pe65h9mc76f_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-fjw3vuif-kkfat-zy1u-cthp-bib7wvr2qy74_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-fyrgnb6j-p38b5-wqoa-4x9i-0570yb766uty_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-h6mn5xf5-j1mgn-sei3-p1ab-mb4inw6dhl2j_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-jx22wc6s-tyat1-xc7v-30on-f4odjcinz045_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-ktcyoop5-e7v2s-ista-k8g2-h52gnk6ubsi5_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-mtmj3tta-wtbie-3yig-3at1-txostp8i3mvy_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-n3vax4aq-oiyw0-wdmv-wdwe-mnuocfzze58j_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-p3bgcf6a-2xrn7-0wjf-68wr-dpzmd3a07c3n_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-p569s261-71iva-x0k4-copf-dtzhsv15gosw_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-pzb6zqfi-i42mk-mfrk-w7vz-jt6wzkfre27i_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-r1qvqcsj-w9kn4-nsuu-f2uq-q4mg2f717ula_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-ru570jif-npoa7-yych-rhjr-m2igfrtvgk5g_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-szpmvywf-34c7b-vuy2-l0fu-wmrz7w0zsr7z_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-u0gw5vrl-wx85j-qq7k-o5gn-hzv97oajge5k_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-ub1za29s-t16l1-4kdm-rmtb-0betd3144nf0_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-vqj8ccrj-kz55x-c078-jid8-srkxe32oigaq_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-wwzs5ld1-otf7a-al3s-xoqk-z34yf28wgu8z_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-x6in4p4j-soes6-6vhk-jrsq-cglzbt4hrgh6_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-ygzznjy7-cko6d-566o-62v1-zssjz7suhfrc_20160512.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-yhj5g4jp-nf119-w5t6-tz95-75pgp9lxo5yy_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/reference_prod-zolmfidw-c52ds-yq4x-x4ky-q0m74fyyrryb_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/testExport" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/output/top_100_ca_10f2f3e6-f728-41f3-b079-43b0aa758292_20170514.data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/output/top_100_ca_29366c83-eae9-42d3-a8af-f15339830dc5_20170514.data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/output/top_100_ca_2a4b6b81-5aa2-4ad8-8ba9-ae1a006e7d71_20170514.data" beforeDir="false" />
@@ -68,14 +31,10 @@
       <change beforePath="$PROJECT_DIR$/src/resources/output/top_100_ventes_d4bfbabf-0160-4e87-8688-78e0943a396a_20170514.data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/output/top_100_ventes_dd43720c-be43-41b6-bc4a-ac4beabd0d9b_20170514.data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/output/top_100_ventes_e3d54d00-18be-45e1-b648-41147638bafe_20170514.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/transactions_20160509.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/transactions_20160510.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/transactions_20160511.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/output/transactions_20160512.data" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/ProcessingServiceTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/ProcessingServiceTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/Tests.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/Tests.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ProcessingData/FilesUtils$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ProcessingData/FilesUtils$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ProcessingData/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ProcessingData/Main$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/ProcessingServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/ProcessingServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/Tests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -93,11 +52,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingServiceTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="93">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#1#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="e#23#49#0" expanded="true" />
               </folding>
@@ -138,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding>
                 <element signature="e#24#81#0" expanded="true" />
               </folding>
@@ -153,19 +115,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding>
                 <element signature="e#24#58#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_vente_GLOBAL_20170514.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071" />
           </provider>
         </entry>
       </file>
@@ -191,13 +146,13 @@
         <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/GeneratingService.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/GeneratingData/GeneratingService.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/FilesUtilsTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/DataGeneratorTest.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/Tests.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/ProcessingServiceTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala" />
       </list>
     </option>
   </component>
@@ -263,6 +218,13 @@
               <item name="phenix-challenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phenix-challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phenix-challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,8 +248,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561662847284" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561664176640" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hypster" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/input" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -447,18 +414,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProcessingServiceTest - 2019.06.27 at 20h 48m 59s.xml">
-      <configuration name="ProcessingServiceTest" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_test_readStream - 2019.06.27 at 20h 50m 13s.xml">
-      <configuration name="Tests.test readStream" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_test_readStream - 2019.06.27 at 20h 52m 14s.xml">
-      <configuration name="Tests.test readStream" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests - 2019.06.27 at 20h 52m 42s.xml">
-      <configuration name="Tests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="Tests - 2019.06.27 at 20h 54m 24s.xml">
       <configuration name="Tests" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -477,11 +432,24 @@
     <history-entry file="ProcessingServiceTest - 2019.06.27 at 21h 00m 42s.xml">
       <configuration name="ProcessingServiceTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.27 at 21h 14m 10s.xml">
+      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.27 at 21h 14m 45s.xml">
+      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.27 at 21h 21m 16s.xml">
+      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.27 at 21h 23m 01s.xml">
+      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-14" width="1385" height="825" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4362416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36465323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -490,7 +458,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275862" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04310345" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23706897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -513,7 +481,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resources/output/new.txt" />
     <entry file="file://$PROJECT_DIR$/src/resources/output/testExport">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -656,37 +623,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_vente_GLOBAL_20170514.data">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="3" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#23#49#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/DataGeneratorTest.scala">
@@ -701,8 +638,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingServiceTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="93">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170507.data">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#23#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

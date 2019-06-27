@@ -1,35 +1,34 @@
 
 import java.io.File
 
-import ProcessingData.FilesUtils.export
 import org.scalatest.FunSuite
 import ProcessingData.ProcessingService._
-
-import scala.concurrent.ExecutionContext
-import ExecutionContext.Implicits.global
+import scala.io.Source
 
 class ProcessingServiceTest extends FunSuite {
 
   test("test calcul des indicateurs") {
 
       val date = "20170514"
-      val inPath = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/input/"
-      val outPath = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/"
+      val inPath = "./src/resources/input/"
+      val outPath = "./src/resources/output/"
       val numOfDays = 1
 
 
       process(date, inPath, outPath, numOfDays)
 
-
+     //liste des fichiers produites par process
       val dir = new File(outPath)
       val files = dir.listFiles((d, name) => name.endsWith(date+".data")).map(_.toString())
-      files.foreach(println)
 
+      for (file <- files) {
+          val list = Source.fromFile(file)
 
+          val rows = list.getLines().map(line => line.split('|')).toList
+          assert (rows.length == 100)
 
-println("ok")
-assert (true)
+      }
+
     }
-
 
 }

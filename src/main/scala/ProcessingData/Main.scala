@@ -15,7 +15,7 @@ object Main {
     val numOfDays = 1
 
 
-    //process(date, inPath, outPath, numOfDays)
+    process(date, inPath, outPath, numOfDays)
 
     val dir = new File("./src/resources/output/")
     val files = dir.listFiles((d, name) => name.endsWith("20170514.data")).map(_.toString())

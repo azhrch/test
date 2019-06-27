@@ -48,11 +48,20 @@ object FilesUtils {
     def files = {
 
       var filesList = List[String]()
-      for (a <- 1 to numberOfDays) {
-        val date = formattedDate.minusDays(a).toString().replace("-", "")
+
+      var c = 0
+      while( c < numberOfDays) {
+        val date = formattedDate.minusDays(c).toString().replace("-", "")
         val filePath: String = path + "transactions_" + date + ".data"
         filesList = filesList ++ List(filePath)
+        c = c+1
       }
+
+
+
+
+
+
       filesList
     }
     val result = Source(files).flatMapConcat(filename =>
