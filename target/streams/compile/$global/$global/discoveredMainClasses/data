@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-["phenix.Main"]
-=======
-["MyProcessData"]
->>>>>>> 046c1cee7d6de02f19f87257bae0584238f54ae4
+["GeneratingData.DataGenerator","ProcessingData.Main"]
