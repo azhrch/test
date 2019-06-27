@@ -16,6 +16,9 @@ object Main {
 
     // last 7 days transactions
     process(date, inPath, outPath, 1)
+   // process(date, inPath, outPath, 7)
+
+
 
   }
 }

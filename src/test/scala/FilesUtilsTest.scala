@@ -5,7 +5,7 @@ import phenix.GeneratingService.{generateRefFile, generateTransactionsFile}
 import org.scalatest.FunSuite
 import phenix.FilesUtils._
 import phenix.GeneratingService._
-
+import phenix.ProcessingService.process
 
 import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
@@ -53,8 +53,6 @@ class FilesUtilsTest extends FunSuite  {
         assert(transactions.length == transLinesNumber)
       })
 
-
-
       refStream.onComplete(x => {
         refs = x.get.map(line => line.split('|')).toList
         assert(refs.length == reflinesNumber)
@@ -67,10 +65,21 @@ class FilesUtilsTest extends FunSuite  {
 
 
 
+  }
 
 
+  test("test calcul des indicateurs") {
+
+    val date = "20170514"
+    val inPath = "./src/resources/input/"
+    val outPath = "./src/resources/output/"
+    val numOfDays = 1
 
 
+    process(date, inPath, outPath, numOfDays)
+
+
+    assert()
   }
 
 
@@ -90,19 +99,23 @@ class FilesUtilsTest extends FunSuite  {
 
 
 
- //test la fonction readStream
+
+
+
+
+
+
+
+
+  //test la fonction readStream
    test("test readStream") {
     val stream = readStream("./src/resources/input/", "20170514")
 
      var result: List[scala.Array[String]] = Nil
      stream.onComplete(x => {
        result = x.get.map(line => line.split('|')).toList
-
        assert(result.length == 45906)
-
      })
-
-
   }
 
 
@@ -113,6 +126,11 @@ class FilesUtilsTest extends FunSuite  {
       .getLines().map(line => line.split('|')).toList
     assert(exportedFile.length == 3)
   }
+
+
+
+
+
 
 
 
