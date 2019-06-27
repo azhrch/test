@@ -13,9 +13,12 @@ object GeneratingService {
 
     val path = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/" //args(0)
 
-    val date = "20170512" //args(1)
+    val date = "20160512" //args(1)
 
     val numberOfDays =  3 //args(2).toInt
+
+    val transLinesNumber = 1000 //args(3).toInt
+    val reflinesNumber = 1000  //args(4).toInt
 
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val runningDay = LocalDate.parse(date, formatter)
@@ -24,8 +27,8 @@ object GeneratingService {
       i < numberOfDays
     }) {
       val date = runningDay.minusDays(i).toString.replace("-", "")
-      generateTransactionsFile(path + "/transactions_" + date + ".data", date)
-      generateRefFile(path + "/reference_prod-" + generateRandomIdMagasin + "_" + date + ".data")
+      generateTransactionsFile(path + "/transactions_" + date + ".data", date, transLinesNumber)
+      generateRefFile(path + "/reference_prod-" + generateRandomIdMagasin + "_" + date + ".data" , reflinesNumber)
 
       {
         i += 1; i - 1
@@ -67,11 +70,11 @@ object GeneratingService {
 
  //generate transaction files
   @throws[FileNotFoundException]
-  def generateTransactionsFile(path: String, date: String): Unit = {
+  def generateTransactionsFile(path: String, date: String, linesNumber : Int): Unit = {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while ( {
-      i < 100000
+      i < linesNumber
     }) {
       val rand = new Random
       val transId = Math.abs(rand.nextInt(100))
@@ -91,11 +94,11 @@ object GeneratingService {
   }
 
   @throws[FileNotFoundException]
-  def generateRefFile(path: String): Unit = {
+  def generateRefFile(path: String, linesNumber : Int): Unit = {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while ( {
-      i < 100000
+      i < linesNumber
     }) {
       val rand = new Random
       val produit = Math.abs(rand.nextInt(100))
