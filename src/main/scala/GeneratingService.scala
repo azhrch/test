@@ -2,30 +2,29 @@ import java.util.{Date, Random}
 import java.text.SimpleDateFormat
 import java.io.{File, FileNotFoundException, PrintWriter}
 import java.util.Random
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 object GeneratingService {
 
   def main(args: scala.Array[String]): Unit = {
 
-    println(randomAlphaNumeric(10))
-    generateTransactionsFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/azeze.txt")
 
-    import java.time.LocalDate
-    import java.time.format.DateTimeFormatter
-    val path = args(0)
 
-    val dateS = args(1)
+    val path = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/" //args(0)
 
-    val nbOfDay = args(2).toInt
+    val date = "20170512" //args(1)
+
+    val numberOfDays =  3 //args(2).toInt
 
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
-    val runDay = LocalDate.parse(dateS, formatter)
+    val runningDay = LocalDate.parse(date, formatter)
     var i = 0
     while ( {
-      i < nbOfDay
+      i < numberOfDays
     }) {
-      val date = runDay.minusDays(i).toString.replace("-", "")
-      generateTransactionsFile(path + "/transactions_" + date + ".data")
+      val date = runningDay.minusDays(i).toString.replace("-", "")
+      generateTransactionsFile(path + "/transactions_" + date + ".data", date)
       generateRefFile(path + "/reference_prod-" + generateRandomIdMagasin + "_" + date + ".data")
 
       {
@@ -54,7 +53,6 @@ object GeneratingService {
     builder.toString
   }
 
-
   //generate random Id magasin.
   def generateRandomIdMagasin: String = {
     randomAlphaNumeric(8) + "-" + randomAlphaNumeric(5) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(12)
@@ -67,10 +65,9 @@ object GeneratingService {
     simple.format(result)
   }
 
-
  //generate transaction files
   @throws[FileNotFoundException]
-  def generateTransactionsFile(path: String): Unit = {
+  def generateTransactionsFile(path: String, date: String): Unit = {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while ( {
@@ -78,7 +75,9 @@ object GeneratingService {
     }) {
       val rand = new Random
       val transId = Math.abs(rand.nextInt(100))
-      val datetime = generateRandomDate(transId)
+      val n = Math.abs(rand.nextInt(100))
+      val randomTime =  generateRandomDate(n)
+      val datetime = date + randomTime.substring(8,randomTime.toString.length)
       val magasinId = generateRandomIdMagasin
       val produitId = Math.abs(rand.nextInt(100))
       val qte = Math.abs(rand.nextInt(100))
@@ -90,7 +89,6 @@ object GeneratingService {
     }
     writer.close()
   }
-
 
   @throws[FileNotFoundException]
   def generateRefFile(path: String): Unit = {
