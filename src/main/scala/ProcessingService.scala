@@ -36,11 +36,9 @@ object ProcessingService {
     //should filter otherwise outofbound exeption, there is no product id 0 in product price files
     // however transactions contain transactions with product id 0 , weird..
     val groupedByMagasin = transactions.filter(x => x(3) != "0").groupBy(x => x(2)).foreach(x => {
-
-      val magasinId = x._1
-      val groupedByMagVal = x._2
-
-      val groupedByProd = groupedByMagVal.groupBy(x => x(3)).toList.map(x => {
+        val magasinId = x._1
+        val groupedByMagVal = x._2
+        val groupedByProd = groupedByMagVal.groupBy(x => x(3)).toList.map(x => {
         val productId = x._1
         val groupedByProdVal = x._2
         var qte: Int = 0
@@ -71,7 +69,7 @@ object ProcessingService {
       export(top100CaParMagasin, outPath + "top_100_ca_" + magasinId + "_" + date + suffix + ".data")
 
       //on ne concatine que les 100 premier de chaque magasin pour réduire les ligne traités après.
-     top100VenteGlobale = top100VenteGlobale ++ top100VenteParMagasin
+      top100VenteGlobale = top100VenteGlobale ++ top100VenteParMagasin
       top100CaGlobale = top100CaGlobale ++ top100CaParMagasin
 
     })
@@ -84,7 +82,7 @@ object ProcessingService {
    export(top100CaGlobale, outPath + "top_100_ca_GLOBAL_" + date + suffix + ".data")
 
   })
-//terminate akka actor.
+    //terminate akka actor.
     system.terminate()
 
   }

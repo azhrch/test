@@ -1,3 +1,5 @@
+package phenix
+
 import java.util.{Date, Random}
 import java.text.SimpleDateFormat
 import java.io.{File, FileNotFoundException, PrintWriter}
@@ -9,20 +11,16 @@ object GeneratingService {
 
   def main(args: scala.Array[String]): Unit = {
 
-
-
     val path = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/" //args(0)
-
     val date = "20160512" //args(1)
-
     val numberOfDays =  3 //args(2).toInt
-
     val transLinesNumber = 1000 //args(3).toInt
     val reflinesNumber = 1000  //args(4).toInt
-
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val runningDay = LocalDate.parse(date, formatter)
+
     var i = 0
+
     while ( {
       i < numberOfDays
     }) {
