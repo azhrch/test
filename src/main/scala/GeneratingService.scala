@@ -9,6 +9,8 @@ import java.time.format.DateTimeFormatter
 
 object GeneratingService {
 
+
+  //a supprimer , mettre toute la classe dans un autre package.
   def main(args: scala.Array[String]): Unit = {
 
     val path = "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/" //args(0)

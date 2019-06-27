@@ -1,10 +1,7 @@
 package phenix
 
 import phenix.ProcessingService._
-import phenix.FilesUtils._
-import scala.concurrent.Future
-import scala.concurrent._
-import ExecutionContext.Implicits.global
+
 
 object Main {
 
