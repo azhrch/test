@@ -4,7 +4,7 @@ Challenge Phenixsds
 
 
 
-<p>Ceci est un paragraphe de texte.</p>
+<B>Ceci est un paragraphe de texte.</B>
 
 <p>Ceci est un autre paragraphe de texte !</p>
 
