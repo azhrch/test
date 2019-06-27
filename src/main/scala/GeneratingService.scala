@@ -9,7 +9,7 @@ object GeneratingService {
   def main(args: scala.Array[String]): Unit = {
 
     println(generateRandomDate(13800))
-    writeRefFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/new3dssdssss3g2g.txt")
+    writeRefFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/a.txt")
 
   }
 
@@ -40,7 +40,6 @@ object GeneratingService {
   def generateRandomIdMagasin: String = {
     generateRandomString(8) + "-" + generateRandomString(5) + "-" + generateRandomString(4) + "-" + generateRandomString(4) + "-" + generateRandomString(12)
   }
-
 
 
   def generateRandomDate(n: Int): String = {
@@ -90,7 +89,8 @@ object GeneratingService {
     }) {
       val r = new Random
       val produit = Math.abs(r.nextInt(100))
-      val prix = 00.01+ r.nextFloat * 100 + ""
+      //
+      val prix = "%05.2f".format(r.nextFloat * 100 ) + ""
       writer.write(produit + "|" + prix.substring(0, 5) + "\n")
 
       {
@@ -99,7 +99,5 @@ object GeneratingService {
     }
     writer.close()
   }
-
-
 
 }
