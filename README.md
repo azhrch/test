@@ -5,7 +5,7 @@ Scala 2.12.0<br>
 sbt 1.2.8<br>
 IntelliJ 2018.3.2 CE<br>
 
-<h2>Librairie</h2>
+<h2>Librairies</h2>
 "akka-stream" version compatible avec scala 2.12.0 : Utilisé pours gérer la lecture des fichiers énormes.<br>
 "scalatest" : utilisé pour les tests unitaires.<br>
 
