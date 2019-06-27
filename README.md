@@ -22,16 +22,16 @@ IntelliJ<br>
   <b> date : </b>date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
   <b>numberOfDays :</b> nombre de jours pour les quelles on veux traiter les données.Soit 1 ou 7<br>
   <b> inPutPath : </b>Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
-  <b> outPutPath : </b>Path ou les résultats des calculs seront exportés</b><br>
+  <b> outPutPath : </b>Path ou les résultats des calculs seront exportés</b><br><br>
   
-Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants 1<br><br>
+Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants 1<br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ca_GLOBAL_YYYYMMDD.data<br>
 <br>
-Si numberOfDays passé est 7 DataProcessor génère les fichiers suivants 1<br><br>
+Si numberOfDays passé est 7 DataProcessor génère les fichiers suivants 1<br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
