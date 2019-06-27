@@ -1,13 +1,12 @@
-package phenix
+package GeneratingData
 
-import java.util.{Date, Random}
-import java.text.SimpleDateFormat
 import java.io.{File, FileNotFoundException, PrintWriter}
-import java.util.Random
+import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.util.{Date, Random}
 
-object GeneratingService {
+object DataGenerator {
 
 
   //a supprimer , mettre toute la classe dans un autre package.

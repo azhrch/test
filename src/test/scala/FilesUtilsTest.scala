@@ -1,11 +1,11 @@
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-import phenix.GeneratingService.{generateRefFile, generateTransactionsFile}
+import GeneratingData.DataGenerator.{generateRefFile, generateTransactionsFile}
 import org.scalatest.FunSuite
-import phenix.FilesUtils._
-import phenix.GeneratingService._
-import phenix.ProcessingService.process
+import ProcessingData.FilesUtils._
+import GeneratingData.DataGenerator._
+import ProcessingData.ProcessingService.process
 
 import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
@@ -67,7 +67,7 @@ class FilesUtilsTest extends FunSuite  {
 
   }
 
-
+/*
   test("test calcul des indicateurs") {
 
     val date = "20170514"
@@ -80,7 +80,7 @@ class FilesUtilsTest extends FunSuite  {
 
 
     assert()
-  }
+  }*/
 
 
 

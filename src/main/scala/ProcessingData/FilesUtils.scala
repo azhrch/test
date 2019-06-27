@@ -1,19 +1,17 @@
-package phenix
+package ProcessingData
 
 import java.io.{File, FileNotFoundException, PrintWriter}
 import java.nio.file.Paths
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-import akka.Done
 import akka.actor.ActorSystem
-import akka.stream.{ActorMaterializer, ActorMaterializerSettings, IOResult}
+import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
 import akka.stream.scaladsl.{FileIO, Framing, Keep, Sink}
 import akka.util.ByteString
 import akka.stream.scaladsl.Source
 import scala.concurrent.Future
-import scala.concurrent._
-import ExecutionContext.Implicits.global
+
 object FilesUtils {
 
   //working on it with akka streams to handle huge files
