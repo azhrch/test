@@ -13,7 +13,7 @@ IntelliJ 2018.3.2 CE<br>
 sbt compile.
 <h2>Pour packager le code</h2>
 sbt assembly.<br>
-résultat un fat jar avec la dépendance "akka-stream" incluse dans le jar.<br>
+résultat : un fat jar avec la dépendance "akka-stream" incluse.<br>
 
 <h2>Lancer le Jar</h2>
   <h2>1. Pour génerer des données</h2>
