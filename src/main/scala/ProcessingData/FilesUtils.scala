@@ -14,22 +14,12 @@ import scala.concurrent.Future
 
 object FilesUtils {
 
-  //working on it with akka streams to handle huge files
+  //lecture d'un seul fichier avec akka streams.
   def readStream(path: String, date: String): Future[Seq[String]] = {
 
     implicit val system = ActorSystem("Sys")
     val settings = ActorMaterializerSettings(system)
     implicit val materializer = ActorMaterializer(settings)
-
-    val multi = Source(1 to 4)
-      .flatMapConcat(i => {
-        Source(i to 4)
-      })
-
-
-
-
-
 
     val result: Future[Seq[String]] =
       FileIO.fromPath(Paths.get(path + "transactions_" + date + ".data"))
@@ -37,60 +27,14 @@ object FilesUtils {
         .map(_.utf8String)
         .toMat(Sink.seq)(Keep.right)
         .run()
-/* var aa: List[scala.Array[String]] = Nil
-    result.onComplete(x => {
-      aa = x.get.map(line => line.split('|')).toList
-    })*/
-     result
-  }
 
-/*  def concatFiles(path : String, date : String, numberOfDays : Int) : List[scala.Array[String]] = {
-    val formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
-    val formattedDate = LocalDate.parse(date, formatter);
-    var acc = List[scala.Array[String]]()
-
-    for( a <- 0 to numberOfDays){
-      val date = formattedDate.minusDays(a).toString().replace("-", "")
-
-
-      val transactions = readStream(path , date)
-      var result: List[scala.Array[String]] = Nil
-      transactions.onComplete(x => {
-        result = x.get.map(line => line.split('|')).toList
-        acc=  acc ++ result })
-    }
-    acc
-  }*/
-  //concats transaction files
-  @throws[FileNotFoundException]
-  def concatFiles(path : String, date : String, numberOfDays : Int) : List[scala.Array[String]] = {
-
-    implicit val system = ActorSystem("Sys")
-    val settings = ActorMaterializerSettings(system)
-    implicit val materializer = ActorMaterializer(settings)
-
-    val formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
-    val formattedDate = LocalDate.parse(date, formatter);
-    var acc = List[scala.Array[String]]()
-
-
-
-    for( a <- 0 to numberOfDays){
-      val date = formattedDate.minusDays(a).toString().replace("-", "")
-      val transactions : List[scala.Array[String]] = scala.io.Source.fromFile(path + "transactions_" + date + ".data")
-        .getLines().map(line => line.split('|')).toList
-
-    /* val transactions = readStream(path , date)
-      var aa: List[scala.Array[String]] = Nil
-      transactions.onComplete(x => {
-      aa = x.get.map(line => line.split('|')).toList
-      acc =  acc ++ aa })*/
-      acc =  acc ++ transactions
- }
-acc
+    result
   }
 
 
+  //concatine plusieurs fichier en entrée et retourne un future de type sequence se string.
+  // utile pour concatiner les transaction des 7 derniers jours
+  //utilise akka Streams pour manipuler des fichiers de grande taille.
   @throws[FileNotFoundException]
   def concatFilesAkka(path : String, date : String, numberOfDays : Int) : Future[Seq[String]] = {
 
@@ -111,9 +55,7 @@ acc
       }
       filesList
     }
-
     val result = Source(files).flatMapConcat(filename =>
-
       FileIO.fromPath(Paths.get(filename))
         .via(Framing.delimiter(ByteString("\n"), 256, allowTruncation = true).map(_.utf8String))
     ).toMat(Sink.seq)(Keep.right)
@@ -123,8 +65,7 @@ acc
 
     }
 
-
-    //exports a list to a file
+    //exporte une liste dans un fichier au path donné.
     def export(list: List[(String, Any)], path: String) {
       val writer = new PrintWriter(new File(path))
       list.foreach(x => writer.write(x._1 + "|" + x._2 + "\n"))

@@ -8,9 +8,8 @@ import ExecutionContext.Implicits.global
 
 object ProcessingService {
 
-  //traitement par date
-  //répond a tous les besoin, en passant numberOfdays 1 on obtient les 4 premiers besoins 1,2,3,4git a
-  // et si on passe 7 on obtient les 4 output 4,5,6,7
+/* répond a tous les besoin, en passant numberOfdays 1 on obtient les 4 premiers besoins 1,2,3,4
+  et si on passe 7 on obtient les 4 output 4,5,6,7 */
   def process(date: String, inPath: String,  outPath: String, numberOfDays : Int): Unit = {
 
     implicit val system = ActorSystem("Sys")
@@ -23,8 +22,6 @@ object ProcessingService {
       case 7 => suffix ="-J7"
       case _ => println("enter valid number of days : 1 or 7")
     }
-    //val transactions: List[scala.Array[String]] = concatFiles(inPath,date, numberOfDays-1)
-
 
   val a = concatFilesAkka(inPath, date, numberOfDays)
   a.onComplete(x => {

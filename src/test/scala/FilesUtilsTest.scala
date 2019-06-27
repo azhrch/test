@@ -1,10 +1,10 @@
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-import GeneratingData.DataGenerator.{generateRefFile, generateTransactionsFile}
+import GeneratingData.GeneratingService.{generateRefFile, generateTransactionsFile}
 import org.scalatest.FunSuite
 import ProcessingData.FilesUtils._
-import GeneratingData.DataGenerator._
+import GeneratingData.GeneratingService._
 import ProcessingData.ProcessingService.process
 
 import scala.concurrent.ExecutionContext
