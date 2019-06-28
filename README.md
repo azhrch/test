@@ -21,7 +21,7 @@ résultat : un fat jar avec la dépendance "akka-stream" incluse.<br>
   
   ```
 scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator <outPutPath> <date> <numberOfDays> <transLinesNumber> <refLinesNumber> 
-}
+
 ```
 
 
@@ -36,7 +36,7 @@ scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator <outPut
 
   ```
 scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor <date> <numberOfDays> <inPutPath> <outPutPath> 
-}
+
 ```
 <br>
   <b>-</b> date : date à laquelle on veux traiter des données. Au Format YYYYMMDD<br>
@@ -44,14 +44,14 @@ scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor <date> 
   <b>-</b>  inPutPath : Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
   <b>-</b>  outPutPath : Path ou les résultats des calculs seront exportés</b><br><br>
   
-Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants :<br>
+Si numberOfDays passé est "1" DataProcessor génère les fichiers suivants :<br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ca_GLOBAL_YYYYMMDD.data<br>
 <br>
-Si numberOfDays passé est 7 DataProcessor génère les fichiers suivants :<br>
+Si numberOfDays passé est "7" DataProcessor génère les fichiers suivants :<br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
