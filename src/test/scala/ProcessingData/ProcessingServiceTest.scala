@@ -1,8 +1,6 @@
 package ProcessingData
 
 import java.io.File
-
-import ProcessingData.FilesUtils.export
 import ProcessingData.ProcessingService._
 import org.scalatest.FunSuite
 
