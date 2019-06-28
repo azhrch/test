@@ -19,8 +19,8 @@ class FilesUtilsTest extends FunSuite  {
 
   test("test export") {
    val list : List[(String, Any)]= List(("v1","v2"), ("v3", "v4"), ("v5", "v6"))
-    export(list, "/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/testExport")
-       val exportedFile : List[scala.Array[String]] = scala.io.Source.fromFile("/home/herch/Documents/work/WorkSpace/phenix-challenge/src/resources/output/testExport")
+    export(list, "./src/resources/output/testExport")
+       val exportedFile : List[scala.Array[String]] = scala.io.Source.fromFile("./src/resources/output/testExport")
       .getLines().map(line => line.split('|')).toList
     assert(exportedFile.length == 3)
   }
