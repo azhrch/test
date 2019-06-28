@@ -77,9 +77,11 @@ object ProcessingService {
    export(top100VenteGlobales, outPath + "top_100_vente_GLOBAL_" + date + suffix + ".data")
    export(top100CaGlobales, outPath + "top_100_ca_GLOBAL_" + date + suffix + ".data")
 
-  })
     //terminate akka actor.
     system.terminate()
+    System.exit(0)
+
+  })
 
   }
 }

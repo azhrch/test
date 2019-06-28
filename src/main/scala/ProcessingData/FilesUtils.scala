@@ -4,7 +4,6 @@ import java.io.{File, FileNotFoundException, PrintWriter}
 import java.nio.file.Paths
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-
 import akka.actor.ActorSystem
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
 import akka.stream.scaladsl.{FileIO, Framing, Keep, Sink}
@@ -30,7 +29,6 @@ object FilesUtils {
 
     result
   }
-
 
    /*concatine plusieurs fichier en entrée et retourne un future de type sequence se string.
    utile pour concatiner les transaction des 7 derniers jours
@@ -66,8 +64,7 @@ object FilesUtils {
       .run()
 
     result
-
-    }
+  }
 
     //exporte une liste dans un fichier au path donné.
     def export(list: List[(String, Any)], path: String) {
@@ -75,5 +72,4 @@ object FilesUtils {
       list.foreach(x => writer.write(x._1 + "|" + x._2 + "\n"))
       writer.close()
     }
-
 }

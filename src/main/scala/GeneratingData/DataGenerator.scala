@@ -10,11 +10,11 @@ object DataGenerator {
 
   def main(args: scala.Array[String]): Unit = {
 
-    val path = args(0) //  ".src/resources/output/"
-    val date =  args(1) //"20160512"
-    val numberOfDays = args(2).toInt // 3
-    val transLinesNumber = args(3).toInt //1000
-    val reflinesNumber = args(4).toInt //1000
+    val path = args(0)
+    val date =  args(1)
+    val numberOfDays = args(2).toInt
+    val transLinesNumber = args(3).toInt
+    val reflinesNumber = args(4).toInt
 
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val runningDay = LocalDate.parse(date, formatter)
