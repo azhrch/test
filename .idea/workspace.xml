@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="882c8302-fb46-4f8b-bd34-050a0da318b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -21,18 +24,70 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/input/reference_prod-bf0999da-ae45-49df-983e-89020198330b_20170514.data">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/DataProcessor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="e#24#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingData/ProcessingServiceTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#24#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/input/reference_prod-6af0502b-ce7a-4a6f-b5d3-516d09514095_20170514.data">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_ca_bdc2a431-797d-4b07-9567-67c565a67b84_20170514-J7.data">
+        <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170511.data">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_ca_6af0502b-ce7a-4a6f-b5d3-516d09514095_20170514-J7.data">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="778">
+              <caret line="65" column="10" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="10" />
+              <folding>
+                <element signature="e#24#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="e#24#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -41,50 +96,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/reference_prod-1i73quzx-93p04-u9ah-dj0s-rw531locmhwo_20160509.data">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20160510.data">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_ventes_e3d54d00-18be-45e1-b648-41147638bafe_20170514-J7.data">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala">
+        <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170514.data">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-              <folding>
-                <element signature="e#24#81#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-688116" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20160509.data">
+        <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170513.data">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="70" lean-forward="true" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#24#81#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-688116" />
           </provider>
         </entry>
       </file>
@@ -120,14 +141,14 @@
         <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/Main.scala" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/scala/GeneratingData/DataGeneratorTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/resources/output/scriptFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/ProcessingData/ProcessingServiceTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/DataProcessor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala" />
       </list>
     </option>
   </component>
@@ -247,7 +268,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561726104503" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561728456368" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hypster" />
   </component>
   <component name="RecentsManager">
@@ -274,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="ScalaTest.FilesUtilsTest.test readStream">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ProcessingData.DataProcessor" />
       <module name="phenix-challenge" />
@@ -305,26 +326,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessingServiceTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="FilesUtilsTest.test concatFilesAkka" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="phenix-challenge" />
-      <setting name="path" value="ProcessingData.ProcessingServiceTest" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="ProcessingData.ProcessingServiceTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProcessingServiceTest.test calcul des indicateurs (1)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="phenix-challenge" />
-      <setting name="path" value="ProcessingData.ProcessingServiceTest" />
+      <setting name="path" value="ProcessingData.FilesUtilsTest" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -334,8 +338,26 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="ProcessingData.ProcessingServiceTest" />
-      <setting name="testName" value="test calcul des indicateurs" />
+      <setting name="path" value="ProcessingData.FilesUtilsTest" />
+      <setting name="testName" value="test concatFilesAkka" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesUtilsTest.test readStream" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="phenix-challenge" />
+      <setting name="path" value="ProcessingData.FilesUtilsTest" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="ProcessingData.FilesUtilsTest" />
+      <setting name="testName" value="test readStream" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -360,11 +382,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.FilesUtilsTest.test readStream" />
+        <item itemvalue="ScalaTest.FilesUtilsTest.test concatFilesAkka" />
+        <item itemvalue="ScalaTest.FilesUtilsTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="ScalaTest.ProcessingServiceTest.test calcul des indicateurs" />
-        <item itemvalue="ScalaTest.ProcessingServiceTest" />
-        <item itemvalue="ScalaTest.FilesUtilsTest" />
-        <item itemvalue="ScalaTest.ProcessingServiceTest.test calcul des indicateurs (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -415,42 +437,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 39m 55s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest - 2019.06.28 at 15h 22m 35s.xml">
+      <configuration name="FilesUtilsTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 42m 35s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest - 2019.06.28 at 15h 22m 45s.xml">
+      <configuration name="FilesUtilsTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 44m 22s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest - 2019.06.28 at 15h 22m 55s.xml">
+      <configuration name="FilesUtilsTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 44m 38s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest_test_concatFilesAkka - 2019.06.28 at 15h 23m 24s.xml">
+      <configuration name="FilesUtilsTest.test concatFilesAkka" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 50m 53s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest - 2019.06.28 at 15h 23m 47s.xml">
+      <configuration name="FilesUtilsTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 51m 15s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest_test_readStream - 2019.06.28 at 15h 24m 14s.xml">
+      <configuration name="FilesUtilsTest.test readStream" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 54m 48s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest - 2019.06.28 at 15h 25m 07s.xml">
+      <configuration name="FilesUtilsTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 55m 45s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest - 2019.06.28 at 15h 25m 29s.xml">
+      <configuration name="FilesUtilsTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 11h 57m 51s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest_test_concatFilesAkka - 2019.06.28 at 15h 27m 21s.xml">
+      <configuration name="FilesUtilsTest.test concatFilesAkka" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="ProcessingServiceTest_test_calcul_des_indicateurs - 2019.06.28 at 12h 02m 33s.xml">
-      <configuration name="ProcessingServiceTest.test calcul des indicateurs" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FilesUtilsTest_test_readStream - 2019.06.28 at 15h 27m 39s.xml">
+      <configuration name="FilesUtilsTest.test readStream" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-14" width="1385" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31618196" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35495898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -459,17 +481,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.066091955" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35488507" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26867816" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.04310345" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.545977" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="11" weight="0.3979885" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.19396552" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.19396552" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.3979885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -482,11 +504,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resources/output/reference_prod-osm9v2lw-ylnfa-vsc2-g2ja-7zgey0f21547_20190511.data" />
-    <entry file="file://$PROJECT_DIR$/src/resources/output/reference_prod-omwrnjlb-43o72-husd-bpoh-v7y02uu6kuej_20190510.data" />
-    <entry file="file://$PROJECT_DIR$/src/resources/output/reference_prod-tszk68h3-iljyg-5eek-fedd-hm393jmz2ow8_20190512.data" />
-    <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20190512.data" />
-    <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20190510.data" />
     <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20190511.data" />
     <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20170511.data" />
     <entry file="file://$PROJECT_DIR$/src/resources/output/transactions_20160511.data">
@@ -597,35 +614,8 @@
     <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_ca_dd43720c-be43-41b6-bc4a-ac4beabd0d9b_20170514-J7.data">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_ventes_d4bfbabf-0160-4e87-8688-78e0943a396a_20170514.data">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/DataProcessor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/GeneratingData/DataGeneratorTest.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -637,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingData/ProcessingServiceTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/input/reference_prod-bf0999da-ae45-49df-983e-89020198330b_20170514.data">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -651,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/output/top_100_ca_6af0502b-ce7a-4a6f-b5d3-516d09514095_20170514-J7.data">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/output/testExport">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/output/reference_prod-1i73quzx-93p04-u9ah-dj0s-rw531locmhwo_20160509.data">
@@ -672,22 +652,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
+    <entry file="file://$PROJECT_DIR$/src/resources/input/reference_prod-29366c83-eae9-42d3-a8af-f15339830dc5_20170514.data">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1036">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="e#24#81#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/GeneratingData/DataGenerator.scala">
+    <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170511.data">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170514.data">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        <state relative-caret-position="-688116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/input/transactions_20170513.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-688116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/DataProcessor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/input/reference_prod-6af0502b-ce7a-4a6f-b5d3-516d09514095_20170514.data">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/ProcessingService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ProcessingData/FilesUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="65" column="10" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="10" />
           <folding>
             <element signature="e#24#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingData/ProcessingServiceTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/output/testExport">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ProcessingData/FilesUtilsTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
           </folding>
         </state>
       </provider>

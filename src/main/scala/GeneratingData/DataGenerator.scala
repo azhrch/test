@@ -15,7 +15,6 @@ object DataGenerator {
     val numberOfDays = args(2).toInt
     val transLinesNumber = args(3).toInt
     val reflinesNumber = args(4).toInt
-
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val runningDay = LocalDate.parse(date, formatter)
 

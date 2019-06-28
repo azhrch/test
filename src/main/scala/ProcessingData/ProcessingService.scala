@@ -23,8 +23,8 @@ object ProcessingService {
       case _ => println("enter valid number of days : 1 or 7")
     }
 
-  val a = concatFilesAkka(inPath, date, numberOfDays)
-  a.onComplete(x => {
+  val result = concatFilesAkka(inPath, date, numberOfDays)
+  result.onComplete(x => {
     var transactions = x.get.map(line => line.split('|')).toList
     var top100VenteGlobale: List[(String, Int)] = Nil
     var top100CaGlobale: List[(String, Float)] = Nil
