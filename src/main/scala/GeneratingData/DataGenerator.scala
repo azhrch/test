@@ -10,11 +10,11 @@ object DataGenerator {
 
   def main(args: scala.Array[String]): Unit = {
 
-    val path = ".src/resources/output/" //args(0)
-    val date = "20160512" //args(1)
-    val numberOfDays =  3 //args(2).toInt
-    val transLinesNumber = 1000 //args(3).toInt
-    val reflinesNumber = 1000  //args(4).toInt
+    val path = args(0) //  ".src/resources/output/"
+    val date =  args(1) //"20160512"
+    val numberOfDays = args(2).toInt // 3
+    val transLinesNumber = args(3).toInt //1000
+    val reflinesNumber = args(4).toInt //1000
 
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val runningDay = LocalDate.parse(date, formatter)
@@ -34,8 +34,8 @@ object DataGenerator {
     }
   }
 
+  // generate a random alphanumeric
   private val ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvxyzw0123456789"
-
   def randomAlphaNumeric(length: Int): String = {
     val builder = new StringBuilder
     var i = 0
@@ -100,7 +100,6 @@ object DataGenerator {
     }) {
       val rand = new Random
       val produit = Math.abs(rand.nextInt(100))
-      //
       val prix = "%05.2f".format(rand.nextFloat * 100 ) + ""
       writer.write(produit + "|" + prix.substring(0, 5) + "\n")
 

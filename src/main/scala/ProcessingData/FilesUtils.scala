@@ -32,9 +32,9 @@ object FilesUtils {
   }
 
 
-  //concatine plusieurs fichier en entrée et retourne un future de type sequence se string.
-  // utile pour concatiner les transaction des 7 derniers jours
-  //utilise akka Streams pour manipuler des fichiers de grande taille.
+   /*concatine plusieurs fichier en entrée et retourne un future de type sequence se string.
+   utile pour concatiner les transaction des 7 derniers jours
+   utilise akka Streams pour manipuler des fichiers de grande taille.*/
   @throws[FileNotFoundException]
   def concatFilesAkka(path : String, date : String, numberOfDays : Int) : Future[Seq[String]] = {
 
@@ -45,10 +45,10 @@ object FilesUtils {
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
     val formattedDate = LocalDate.parse(date, formatter);
 
+    //retourne la liste des fichiers qu'on veux concatiner
     def files = {
 
       var filesList = List[String]()
-
       var c = 0
       while( c < numberOfDays) {
         val date = formattedDate.minusDays(c).toString().replace("-", "")
@@ -56,11 +56,6 @@ object FilesUtils {
         filesList = filesList ++ List(filePath)
         c = c+1
       }
-
-
-
-
-
 
       filesList
     }

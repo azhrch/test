@@ -2,12 +2,9 @@ package GeneratingData
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-
 import GeneratingData.DataGenerator.{generateRefFile, generateTransactionsFile, _}
 import ProcessingData.FilesUtils._
 import org.scalatest.FunSuite
-
-import scala.concurrent.ExecutionContext
 import scala.concurrent.ExecutionContext.Implicits.global
 
 
