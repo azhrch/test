@@ -27,7 +27,7 @@ scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator <outPut
 
 
   <b>-</b> outPutPath : Path ou les fichiers générer vont se trouver.</b><br>
-  <b>-</b> date :date à laquelle on veux génerer des données. Au Format YYYYMMDD<br>
+  <b>-</b> date : date à partir de laquelle on veux génerer des données. Format : YYYYMMDD<br>
   <b>-</b> numberOfDays : nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
   <b>-</b> transLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de transactions.<br>
   <b>-</b> refLinesNumber : nombre de ligne qu'on souhaite génerer dans les fichiers de réferences.<br>
@@ -44,14 +44,14 @@ scala -cp phenix-challenge-assembly-0.1.jar ProcessingData.DataProcessor <date> 
   <b>-</b>  inPutPath : Path ou se trouvent les fichiers qu'on veux traiter.</b><br>
   <b>-</b>  outPutPath : Path ou les résultats des calculs seront exportés</b><br><br>
   
-Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants 1<br>
+Si numberOfDays passé est 1 DataProcessor génère les fichiers suivants :<br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD.data<br>
 top_100_ca_<ID_MAGASIN>_YYYYMMDD.data<br>
 top_100_ca_GLOBAL_YYYYMMDD.data<br>
 <br>
-Si numberOfDays passé est 7 DataProcessor génère les fichiers suivants 1<br>
+Si numberOfDays passé est 7 DataProcessor génère les fichiers suivants :<br>
 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD-J7.data<br>
 top_100_ventes_GLOBAL_YYYYMMDD-J7.data<br>
