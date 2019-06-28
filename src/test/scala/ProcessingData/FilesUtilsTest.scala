@@ -20,6 +20,7 @@ class FilesUtilsTest extends FunSuite {
     })
   }
 
+  // teste la fonction export qui exporte un fichier
   test("test export") {
     val list: List[(String, Any)] = List(("v1", "v2"), ("v3", "v4"), ("v5", "v6"))
     export(list, "./src/resources/output/testExport")
@@ -29,7 +30,7 @@ class FilesUtilsTest extends FunSuite {
   }
 
 
-  //test la fonction readStream
+  //test la fonction concatFiles akka
   test("test concatFilesAkka") {
 
     implicit val system = ActorSystem("Sys")
