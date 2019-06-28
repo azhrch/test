@@ -34,7 +34,7 @@ object DataGenerator {
     }
   }
 
-  // generate a random alphanumeric
+  // genere un alphanumérique aléatoire de longeur lenght
   private val ALPHA_NUMERIC_STRING = "abcdefghijklmnopqrstuvxyzw0123456789"
   def randomAlphaNumeric(length: Int): String = {
     val builder = new StringBuilder
@@ -54,19 +54,19 @@ object DataGenerator {
     builder.toString
   }
 
-  //generate random Id magasin.
+  //genere un id magasin alphanumérique aléatoire.
   def generateRandomIdMagasin: String = {
     randomAlphaNumeric(8) + "-" + randomAlphaNumeric(5) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(4) + "-" + randomAlphaNumeric(12)
   }
 
-  //generate a random date
+  //genere une date aléatoire
   def generateRandomDate(n: Int): String = {
     val simple = new SimpleDateFormat("yyyyMMdd'T'HHmmssSSSZ")
     val result = new Date(System.currentTimeMillis+n*5445)
     simple.format(result)
   }
 
- //generate transaction files
+ //genere un fichier de transactions
   @throws[FileNotFoundException]
   def generateTransactionsFile(path: String, date: String, linesNumber : Int): Unit = {
     val writer = new PrintWriter(new File(path))
@@ -90,7 +90,7 @@ object DataGenerator {
     }
     writer.close()
   }
-
+  //genere un fichier de reference.
   @throws[FileNotFoundException]
   def generateRefFile(path: String, linesNumber : Int): Unit = {
     val writer = new PrintWriter(new File(path))

@@ -29,8 +29,6 @@ object ProcessingService {
     var top100VenteGlobale: List[(String, Int)] = Nil
     var top100CaGlobale: List[(String, Float)] = Nil
 
-    //should filter otherwise outofbound exeption, there is no product id 0 in product price files
-    // however transactions contain transactions with product id 0 , weird..
     val groupedByMagasin = transactions.filter(x => x(3) != "0").groupBy(x => x(2)).foreach(x => {
         val magasinId = x._1
         val groupedByMagVal = x._2
