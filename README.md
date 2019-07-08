@@ -15,7 +15,10 @@ IntelliJ 2018.3.2 CE<br>
 $ sbt doc
 
 
-  ```$ sbt doc
+
+  ```
+  $ sbt doc
+  
 ```
 
 <br>
