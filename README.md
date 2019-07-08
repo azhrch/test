@@ -32,7 +32,7 @@ Cela génère un fichier racine index.html et d’autres fichiers associés pour
   $ sbt assembly
   
 ```
-<br>
+
 Cela génère un fat jar avec la dépendance "akka-stream" y incluse.<br>
 
 <h2>Lancer le Jar</h2>
