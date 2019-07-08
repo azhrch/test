@@ -13,9 +13,9 @@ IntelliJ 2018.3.2 CE<br>
 
 <h2>Pour générer la documentation de l'API Scaladoc</h2>
 $ sbt doc
-  ```
-$ sbt doc
 
+
+  ```$ sbt doc
 ```
 
 <br>
