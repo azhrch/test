@@ -33,7 +33,7 @@ Cela génère un fichier racine index.html et d’autres fichiers associés pour
   
 ```
 <br>
-résultat : un fat jar avec la dépendance "akka-stream" incluse.<br>
+Cela génère un fat jar avec la dépendance "akka-stream" y incluse.<br>
 
 <h2>Lancer le Jar</h2>
   <h2>1. Pour génerer des données</h2>
