@@ -8,7 +8,7 @@ import scala.io.Source
 
 class ProcessingServiceTest extends FunSuite {
 
-  test("test calcul des indicateurs") {
+  test(testName = "Test calcul des indicateurs") {
 
     val date = "20170514"
     val inPath = "./src/resources/input/"

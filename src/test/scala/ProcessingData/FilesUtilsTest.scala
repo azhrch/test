@@ -4,13 +4,12 @@ import ProcessingData.FilesUtils._
 import akka.actor.ActorSystem
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
 import org.scalatest.FunSuite
-
 import scala.concurrent.ExecutionContext.Implicits.global
 
 class FilesUtilsTest extends FunSuite {
 
-  //test la fonction readStream
-  test("test readStream") {
+
+  test(testName = "Test readStream") {
 
     val stream = readStream("./src/resources/input/", "20170514")
     var result: List[scala.Array[String]] = Nil
@@ -20,8 +19,8 @@ class FilesUtilsTest extends FunSuite {
     })
   }
 
-  // teste la fonction export qui exporte un fichier
-  test("test export") {
+  test(testName = "Test exportation des fichiers") {
+
     val list: List[(String, Any)] = List(("v1", "v2"), ("v3", "v4"), ("v5", "v6"))
     export(list, "./src/resources/output/testExport")
     val exportedFile: List[scala.Array[String]] = scala.io.Source.fromFile("./src/resources/output/testExport")
@@ -29,21 +28,18 @@ class FilesUtilsTest extends FunSuite {
     assert(exportedFile.length == 3)
   }
 
+  test(testName = "Test concatFiles") {
 
-  //test la fonction concatFiles akka
-  test("test concatFilesAkka") {
-
-    implicit val system = ActorSystem("Sys")
+    implicit val system : ActorSystem = ActorSystem("Sys")
     val settings = ActorMaterializerSettings(system)
-    implicit val materializer = ActorMaterializer(settings)
+    implicit val materializer : ActorMaterializer = ActorMaterializer(settings)
 
-    val result = concatFilesAkka("./src/resources/input/", "20170514", 2)
+    val result = concatFiles("./src/resources/input/", "20170514", 2)
     result.onComplete(x => {
       var transactions = x.get.map(line => line.split('|')).toList
       assert(transactions.length == 91812)
 
     })
   }
-
 
 }
