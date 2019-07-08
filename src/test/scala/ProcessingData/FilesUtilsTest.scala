@@ -30,9 +30,9 @@ class FilesUtilsTest extends FunSuite {
 
   test(testName = "Test concatFiles") {
 
-    implicit val system : ActorSystem = ActorSystem("Sys")
+    implicit val system: ActorSystem = ActorSystem("Sys")
     val settings = ActorMaterializerSettings(system)
-    implicit val materializer : ActorMaterializer = ActorMaterializer(settings)
+    implicit val materializer: ActorMaterializer = ActorMaterializer(settings)
 
     val result = concatFiles("./src/resources/input/", "20170514", 2)
     result.onComplete(x => {

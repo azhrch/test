@@ -35,7 +35,6 @@ object GeneratorUtils {
       randomAlphaNumeric(12)
   }
 
-
   /** Générer une date aléatoire
     *
     * @param n une valeur utilisée pour changer la date
@@ -43,27 +42,27 @@ object GeneratorUtils {
     */
   def generateRandomDate(n: Int): String = {
     val simple = new SimpleDateFormat("yyyyMMdd'T'HHmmssZ")
-    val result = new Date(System.currentTimeMillis+n*5445)
+    val result = new Date(System.currentTimeMillis + n * 5445)
     simple.format(result)
   }
 
   /** Générer un fichier de transactions
     *
-    * @param path la destination du fichier
-    * @param date la date des transactions
+    * @param path        la destination du fichier
+    * @param date        la date des transactions
     * @param linesNumber le nombre des lignes dans le fichier
     *
     */
 
-  def generateTransactionsFile(path: String, date: String, linesNumber : Int): Unit = {
+  def generateTransactionsFile(path: String, date: String, linesNumber: Int): Unit = {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while (i < linesNumber) {
       val rand = new Random
       val transId = Math.abs(rand.nextInt(100))
       val n = Math.abs(rand.nextInt(100))
-      val randomTime =  generateRandomDate(n)
-      val datetime = date + randomTime.substring(8,randomTime.toString.length)
+      val randomTime = generateRandomDate(n)
+      val datetime = date + randomTime.substring(8, randomTime.toString.length)
       val magasinId = generateRandomIdMagasin
       val produitId = Math.abs(rand.nextInt(100))
       val qte = Math.abs(rand.nextInt(100))
@@ -75,18 +74,18 @@ object GeneratorUtils {
 
   /** Générer un fichier de references
     *
-    * @param path la destination du fichier
+    * @param path        la destination du fichier
     * @param linesNumber le nombre des lignes dans le fichier
     *
     */
 
-  def generateRefFile(path: String, linesNumber : Int): Unit = {
+  def generateRefFile(path: String, linesNumber: Int): Unit = {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while (i < linesNumber) {
       val rand = new Random
       val produit = Math.abs(rand.nextInt(100))
-      val prix = "%05.2f".format(rand.nextFloat * 100 ) + ""
+      val prix = "%05.2f".format(rand.nextFloat * 100) + ""
       writer.write(produit + "|" + prix.substring(0, 5) + "\n")
       i += 1
     }

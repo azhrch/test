@@ -14,9 +14,9 @@ import ExecutionContext.Implicits.global
 
 object FilesUtils {
 
-  implicit val system : ActorSystem = ActorSystem("Sys")
+  implicit val system: ActorSystem = ActorSystem("Sys")
   val settings = ActorMaterializerSettings(system)
-  implicit val materializer : ActorMaterializer = ActorMaterializer(settings)
+  implicit val materializer: ActorMaterializer = ActorMaterializer(settings)
 
   /** Lire un seul fichier
     *
@@ -43,30 +43,30 @@ object FilesUtils {
     *  - utile pour concatiner les transaction des 7 derniers jours
     *  - utilise akka Streams pour manipuler des fichiers de grande taille
     *
-    * @param path l'arborescence de l'input
-    * @param date la dernière date du calcul
+    * @param path         l'arborescence de l'input
+    * @param date         la dernière date du calcul
     * @param numberOfDays le nombre des jours
     * @return un future de type sequence se string
     */
 
-  def concatFiles(path : String, date : String, numberOfDays : Int) : Future[Seq[String]] = {
+  def concatFiles(path: String, date: String, numberOfDays: Int): Future[Seq[String]] = {
     val formatter = DateTimeFormatter.ofPattern("yyyyMMdd")
     val formattedDate = LocalDate.parse(date, formatter)
 
     /** Générer la liste des fichiers qu'on veux concatiner
       */
-    def files : List[String] = {
+    def files: List[String] = {
 
       var filesList = List[String]()
       var c = 0
-      while( c < numberOfDays) {
+      while (c < numberOfDays) {
         val date = formattedDate.minusDays(c)
           .toString
           .replace("-", "")
 
         val filePath: String = path + "transactions_" + date + ".data"
         filesList = filesList ++ List(filePath)
-        c = c+1
+        c = c + 1
       }
       filesList
     }
@@ -88,9 +88,9 @@ object FilesUtils {
     * @param list la liste à inserer dans le fichier
     * @param path l'arborescence du fichier d'output
     */
-    def export(list: List[(String, Any)], path: String) {
-      val writer = new PrintWriter(new File(path))
-      list.foreach(x => writer.write(x._1 + "|" + x._2 + "\n"))
-      writer.close()
-    }
+  def export(list: List[(String, Any)], path: String) {
+    val writer = new PrintWriter(new File(path))
+    list.foreach(x => writer.write(x._1 + "|" + x._2 + "\n"))
+    writer.close()
+  }
 }
