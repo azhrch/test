@@ -27,6 +27,7 @@ Cela génère un fichier racine index.html et d’autres fichiers associés pour
   
 ```
 <h2>Pour packager le code</h2>
+
   ```
   $ sbt assembly
   
