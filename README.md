@@ -40,8 +40,6 @@ $ scala -cp phenix-challenge-assembly-0.1.jar GeneratingData.DataGenerator <outP
 
 ```
 
-
-
   <b>-</b> outPutPath : Path ou les fichiers générer vont se trouver.</b><br>
   <b>-</b> date : date à partir de laquelle on veux génerer des données. Format : YYYYMMDD<br>
   <b>-</b> numberOfDays : nombre de jours pour les quelles on veux génerer des données aléatoire.<br> 
