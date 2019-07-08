@@ -17,7 +17,6 @@ IntelliJ 2018.3.2 CE<br>
   $ sbt doc
   
 ```
-
 <br>
 
 Cela génère un fichier racine index.html et d’autres fichiers associés pour la documentation sous le target répertoire du projet. Avec Scala 2.12 et SBT 1.2.8, le fichier racine se trouve dans target/scala-2.12/api/index.html .
@@ -32,6 +31,7 @@ Cela génère un fichier racine index.html et d’autres fichiers associés pour
   $ sbt assembly
   
 ```
+<br>
 résultat : un fat jar avec la dépendance "akka-stream" incluse.<br>
 
 <h2>Lancer le Jar</h2>
