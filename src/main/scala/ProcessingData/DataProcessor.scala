@@ -14,4 +14,11 @@ object DataProcessor {
     process(date, inPath, outPath, numOfDays)
 
   }
+
 }
+
+
+
+
+
+
