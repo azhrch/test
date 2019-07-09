@@ -54,7 +54,7 @@ object GeneratorUtils {
     *
     */
 
-  def generateTransactionsFile(path: String, date: String, linesNumber: Int): Unit = {
+  def generateTransactionsFile(path: String, date: String, linesNumber: Int) {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while (i < linesNumber) {
@@ -79,7 +79,7 @@ object GeneratorUtils {
     *
     */
 
-  def generateRefFile(path: String, linesNumber: Int): Unit = {
+  def generateRefFile(path: String, linesNumber: Int) {
     val writer = new PrintWriter(new File(path))
     var i = 0
     while (i < linesNumber) {
