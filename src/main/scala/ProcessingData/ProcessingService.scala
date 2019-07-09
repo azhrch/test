@@ -27,7 +27,7 @@ object ProcessingService {
     numberOfDays match {
       case 1 => suffix
       case 7 => suffix = "-J7"
-      case _ => println("enter valid number of days : 1 or 7")
+      case _ => println("enter a valid number of days : 1 or 7")
     }
 
     val result = concatFiles(inPath, date, numberOfDays)
